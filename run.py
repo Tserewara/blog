@@ -1,10 +1,13 @@
 import json
-from flask import Flask, render_template
+from flask import Flask, render_template, abort, send_from_directory
 from utils.fetch_github import get_article_from_github, get_json_menu_from_github
 from utils.markdown_converter import convert_markdown_to_html
 
 app = Flask(__name__)
 
+@app.route('/favicon.ico')
+def fav():
+    return send_from_directory('static', 'favicon.ico')
 
 @app.route('/')
 def home():
