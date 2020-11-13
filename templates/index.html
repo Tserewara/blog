@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block header %}
+{% include 'partials/header.html' %}
+{% endblock header %}
+
+{% block content %}
+
+
+<main class="main">
+    <h2>Posts</h2>
+    <hr>
+    {% for post in menu %}
+    <div class="post">
+        <h2 class="post-title">
+            <a href="{{ post.link }}" class="link-title">{{ post.post_title }}</a>
+        </h2>
+        <p id="description">{{ post.description }}</p>
+    </div>
+    {% endfor %}
+
+
+</main>
+
+{% include 'partials/footer.html' %}
+
+
+
+{% endblock content %}

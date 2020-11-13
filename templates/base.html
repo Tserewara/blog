@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="favicon" href="{{ url_for('static', filename='favicon.ico') }}" />
+
+    <!--Google Fonts-->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400&family=Fira+Code&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dracula.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Alvaro's Blog</title>
+</head>
+
+<body>
+    {% block header %}
+    {% endblock header %}
+
+    {% block content %}
+    {% endblock content %}
+
+</body>
+
+</html>

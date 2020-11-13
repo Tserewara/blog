@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% include 'partials/header.html' %}
+
+{% block content %}
+<div class="container">
+
+    <main class="main">
+
+        {{ post_markdown|safe }}
+
+    </main>
+
+    {% include 'partials/footer.html' %}
+
+</div>
+
+{% endblock content %}
