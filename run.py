@@ -5,9 +5,11 @@ from utils.markdown_converter import convert_markdown_to_html
 
 app = Flask(__name__)
 
+
 @app.route('/favicon.ico')
 def fav():
     return send_from_directory('static', 'favicon.ico')
+
 
 @app.route('/')
 def home():
