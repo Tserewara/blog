@@ -6,14 +6,6 @@ import requests
 
 app = Flask(__name__)
 
-<<<<<<< HEAD
-=======
-
-@app.route('/favicon.ico')
-def fav():
-    return send_from_directory('static', 'favicon.ico')
->>>>>>> 4d06ab165f6a0261be82ac0ff100c5ebc0658b40
-
 
 @app.route('/')
 def home():
