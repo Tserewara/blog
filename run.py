@@ -1,8 +1,8 @@
 import json
-from flask import Flask, render_template, abort, send_from_directory
+from flask import Flask, render_template
 from utils.fetch_github import get_json_menu_from_github, get_article_from_github
 from utils.markdown_converter import convert_markdown_to_html
-import requests
+
 
 app = Flask(__name__)
 
