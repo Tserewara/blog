@@ -18,6 +18,8 @@ def index(path_to_article):
     article = get_article_from_github(path_to_article)
     post_markdown = convert_markdown_to_html(article)
     return render_template('post.html', post_markdown=post_markdown)
+    # return post_markdown
+
 
 
 if __name__ == "__main__":
