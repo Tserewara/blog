@@ -1,0 +1,74 @@
+.article {
+  text-align: justify;
+  line-height: 1.75;
+  color: $articleColor;
+
+  img {
+    width: 100%;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+    color: $white;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .article-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    .thumb {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 2rem;
+    }
+    
+    .article-title {
+      font-family: $fontTitle;
+      font-size: 36px;
+      text-align: left;
+      line-height: 1.2;
+    }
+
+    .meta {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 20px;
+
+      .tags {
+        margin: 1rem 0 ;
+      }
+
+      .tag {
+        padding: .3rem .8rem;
+        background-color: $green;
+        color: $lightBlack;
+        text-decoration: none;
+        opacity: 0.9;
+        border: 1px solid $green;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    
+      .author {
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+        color: $articleColor;
+
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+}

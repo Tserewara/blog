@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+{{ $month_string := printf "date.month.%s" .Date.Month  }}
+{{ $month := i18n (lower $month_string) }}
+{{ $formatted_date := .Date.Format  (printf "2 de %s de 2006" $month) }}
+
+<main class="main">
+  <article class="article">
+    <div class="article-header">
+      <img class="thumb" src="{{ .Params.Thumb }}" alt="{{ .Params.Alt}}">
+      <h1 class="article-title">{{ .Title }}</h1>
+      
+      <div class="meta">
+
+        <span>Por <a class="author" href="/sobre"></i> {{ .Params.Author }}</a>
+        em </i> {{ $formatted_date }}</span> 
+        
+        <div class="tags">
+          {{ range .Params.tags }}
+          <a href="/tags/{{ . }}" class="tag">{{ . }}</a>
+        {{ end }}
+        </div>
+        
+      </div>
+    </div>
+    {{ .Content }}
+  </article>
+</main>
+  
+{{ end }}
+

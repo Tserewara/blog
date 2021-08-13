@@ -1,0 +1,4 @@
+[submodule "alvarojunqueira/public"]
+	path = alvarojunqueira/public
+	url = https://github.com/Tserewara/alvarojunqueira.com.br.git
+	branch = master

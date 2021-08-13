@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+{{ $month_string := printf "date.month.%s" .Date.Month  }}
+{{ $month := i18n (lower $month_string) }}
+{{ $formatted_date := .Date.Format  (printf "2 de %s de 2006" $month) }}
+
+<main class="main">
+  <h2 class="latest-articles">Últimos artigos</h2>
+
+  {{ range first 3 (where .Site.RegularPages.ByDate "Type" "in" "artigos") }}
+  
+    <a class="card" href="{{ .RelPermalink }}">
+      <span class="date">{{ .Date.Format  "02/01/06" }}</span>
+      <h3 class="card-title" >{{ .Title}}</h3>
+    </a>
+
+  {{ end }}
+  
+</main>
+
+{{ end }}

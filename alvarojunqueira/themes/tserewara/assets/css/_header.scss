@@ -1,0 +1,56 @@
+.header {
+  padding: $marginGeneral;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid $black;
+  background: $lightBlack;
+  font-family: 'Poppins', sans-serif;
+ 
+
+  .brand {
+    padding: 1rem 0;
+    text-decoration: none;
+    color: $white;
+    font-size: 24px;
+  }
+
+  .nav a {
+    margin-right: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    margin: 0 0 2rem;
+    padding: 1rem 0 2rem;
+    
+    .brand {
+      font-size: 20px;
+    }
+   
+    .nav a{
+      background: $darkGray;
+      padding: 0.5rem;
+      -webkit-box-shadow: 5px 5px 19px -10px #000000; 
+      box-shadow: 5px 5px 19px -10px #000000;
+      border-radius: 4px;
+      opacity: .8;
+      
+      &:hover {
+        opacity: 1;
+        color: $white;
+      }
+    }
+  }
+}

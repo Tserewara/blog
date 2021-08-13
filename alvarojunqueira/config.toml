@@ -1,0 +1,7 @@
+baseURL = "https://alvarojunqueira.com.br/"
+languageCode = "pt-br"
+title = "Álvaro Junqueira | Blog"
+theme = "tserewara"
+defaultContentLanguage = 'pt-br'
+pygmentsUseClasses=true
+relativeURLs = "True"

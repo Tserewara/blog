@@ -1,0 +1,35 @@
+- id: "date.month.january"
+  translation: "Janeiro"
+
+- id: "date.month.february"
+  translation: "Fevereiro"
+
+- id: "date.month.march"
+  translation: "Março"
+
+- id: "date.month.april"
+  translation: "Abril"
+
+- id: "date.month.may"
+  translation: "Maio"
+
+- id: "date.month.june"
+  translation: "Junho"
+
+- id: "date.month.july"
+  translation: "Julho"
+
+- id: "date.month.august"
+  translation: "Agosto"
+
+- id: "date.month.september"
+  translation: "Setembro"
+
+- id: "date.month.october"
+  translation: "Outubro"
+
+- id: "date.month.november"
+  translation: "Novembro"
+
+- id: "date.month.december"
+  translation: "Dezembro"

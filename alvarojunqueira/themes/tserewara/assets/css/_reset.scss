@@ -1,0 +1,48 @@
+@import 'vars';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  overflow: overlay;
+}
+
+/* SELECTION COLOR*/
+::selection {
+  background: $colorSelection;
+  color: $white;
+}
+
+/* SCROLLBAR*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  height: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $darkGray;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $articleColor;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: $articleColor;
+}
